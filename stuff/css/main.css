@@ -1,0 +1,29 @@
+/*-- how do i make a tetr.io like menu ples hlep --*/
+body {
+
+    .menus {
+
+   
+        .menu-button {
+    
+            background-color: cyan;
+    
+        }
+
+   
+        .menubutton:hover {
+    
+            background-color: rgb(172, 255, 248);
+   
+        }
+
+   
+        .menubutton:active {
+    
+            background-color: rgb(215, 255, 255);
+   
+        }
+
+    }
+
+}
