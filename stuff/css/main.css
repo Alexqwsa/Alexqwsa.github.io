@@ -1,29 +1,40 @@
 /*-- how do i make a tetr.io like menu ples hlep --*/
-body {
 
-    .menus {
+@font-face {
+    font-family: HUN-din;
+    src: url('../assets/fonts/hun.ttf');
+}
 
-   
-        .menu-button {
+body { 
+  background-image: url('../assets/imgs/bg/matthias-heil-T7lMR-syZAg-unsplash.jpg');
+  overflow: hidden;
+}
+
+.menu-button {
+background-color: darkcyan;
+color:cyan;
+box-shadow: 3px 3px 3px 3px lightblue;
+position: absolute;
+width: 100%;
+left: 50%;
+font-family: HUN-din;
+padding: 8px;
+}
+
+.menubutton:hover {
+    transform: translateX(-150px);
+    background-color: rgb(106, 184, 182);   
     
-            background-color: cyan;
-    
-        }
+}
 
-   
-        .menubutton:hover {
-    
-            background-color: rgb(172, 255, 248);
-   
-        }
+.menubutton:active {
+background-color: rgb(215, 255, 255);
+}
 
-   
-        .menubutton:active {
-    
-            background-color: rgb(215, 255, 255);
-   
-        }
 
+@media (max-width: 600px) {
+    .menu-button {
+        font-size: 12px;
+        padding: 7px;
     }
-
 }
