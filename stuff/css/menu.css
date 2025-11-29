@@ -5,15 +5,15 @@
     src: url('../assets/fonts/hun.ttf');
 }
 
-body { 
+.menu-background { 
   background-image: url('../assets/imgs/bg/matthias-heil-T7lMR-syZAg-unsplash.jpg');
   overflow: hidden;
 }
 
-.menu-button {
+.about-button {
 background-color: darkcyan;
-color:cyan;
-box-shadow: 3px 3px 3px 3px lightblue;
+color:lightcyan;
+box-shadow: 3px 3px 3px 3px cyan;
 position: absolute;
 width: 100%;
 left: 50%;
@@ -21,13 +21,39 @@ font-family: HUN-din;
 padding: 8px;
 }
 
-.menubutton:hover {
+.projects-button {
+background-color: green;
+color:greenyellow;
+box-shadow: 3px 3px 3px 3px lightgreen;
+margin-top: 200px;
+padding: 50%;
+position: absolute;
+width: 100%;
+
+left: 50%;
+font-family: HUN-din;
+padding: 8px;
+}
+
+.now-button {
+background-color: darkred;
+color:red;
+box-shadow: 3px 3px 3px 3px maroon;
+position: absolute;
+margin-top: 400px;
+width: 100%;
+left: 50%;
+font-family: HUN-din;
+padding: 8px;
+}
+
+#menu-button:hover {
     transform: translateX(-150px);
     background-color: rgb(106, 184, 182);   
     
 }
 
-.menubutton:active {
+#menu-button:active {
 background-color: rgb(215, 255, 255);
 }
 
