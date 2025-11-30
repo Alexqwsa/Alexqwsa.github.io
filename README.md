@@ -1,4 +1,4 @@
-# just another bad coded website
+# just another badly coded website
 
 totally my website using github pages (source: idk)
 

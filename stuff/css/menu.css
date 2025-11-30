@@ -21,6 +21,13 @@ font-family: HUN-din;
 padding: 8px;
 }
 
+.about-button img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
 .projects-button {
 background-color: green;
 color:greenyellow;
@@ -47,16 +54,56 @@ font-family: HUN-din;
 padding: 8px;
 }
 
-#menu-button:hover {
-    transform: translateX(-150px);
-    background-color: rgb(106, 184, 182);   
-    
+#about-button:hover {
+    animation : about-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
 }
 
-#menu-button:active {
+#about-button:active {
 background-color: rgb(215, 255, 255);
 }
 
+#projects-button:hover {
+    animation : projects-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+#projects-button:active {
+background-color: rgb(215, 255, 255);
+}
+
+#now-button:hover {
+    animation : now-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+#now-button:active {
+background-color: rgb(215, 255, 255);
+}
+
+@keyframes about-hover {
+  
+  from {background-color: darkcyan;}
+  to {background-color: rgb(106, 184, 182); transform: translateX(-150px);}
+
+}
+
+@keyframes projects-hover {
+  
+  from {background-color: green;}
+  to {background-color: rgb(53, 177, 0); transform: translateX(-150px);}
+
+}
+
+@keyframes now-hover {
+  
+  from {background-color: darkred;}
+  to {background-color: rgb(196, 0, 0); transform: translateX(-150px);}
+
+}
 
 @media (max-width: 600px) {
     .menu-button {
