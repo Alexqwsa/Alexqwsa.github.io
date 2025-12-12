@@ -1,0 +1,42 @@
+/* insert horizontal navbar here */
+ul.navbar {  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li.navbar {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.back_button {
+}
+
+.projects_button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.about_me_button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.now_button {
+  background-color: #f44336;
+  color: black;
+}

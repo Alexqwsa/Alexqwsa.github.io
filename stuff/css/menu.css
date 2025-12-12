@@ -36,10 +36,16 @@ margin-top: 200px;
 padding: 50%;
 position: absolute;
 width: 100%;
-
 left: 50%;
 font-family: HUN-din;
 padding: 8px;
+}
+
+.projects-button img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
 .now-button {
@@ -52,6 +58,13 @@ width: 100%;
 left: 50%;
 font-family: HUN-din;
 padding: 8px;
+}
+
+.now-button img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
 #about-button:hover {
