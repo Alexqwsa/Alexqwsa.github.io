@@ -1,3 +1,8 @@
+
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: ProFontWindows;
     src: url('../assets/fonts/pfw.ttf');
@@ -25,11 +30,12 @@ ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333333;
+  background-color: #000000;
   display: flex;
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
+
   top: 0;
 }
 
@@ -43,34 +49,53 @@ ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+ 
+}
+#nav_projects_button:hover {
+  background-color: #45a049;
+ }
+
+#nav_about_me_button:hover {
+  background-color: #007bb5;
 }
 
-ul li a:hover {
-  background-color: #111111;
+#nav_now_button:hover {
+  background-color: #da190b;
 }
+
 
 .back_button {
-
-  }
+  height: auto;
+  
+}
 
 .projects_button {
   background-color: #4CAF50;
   color: white;
+  height: auto;
 }
 
 .about_me_button {
   background-color: #008CBA;
   color: white;
+  height: auto;
 }
 
 .now_button {
   background-color: #f44336;
   color: black;
+  height: auto;
 }
 
 #button_navbar {
   margin-top: 5px;
   font-family: ProFontWindows;
+}
+
+.logo_navbar {
+max-height: auto;
+width: 100px;
+max-width: auto;
 }
 
 .header {
@@ -82,17 +107,93 @@ ul li a:hover {
   font-size: 30px;
 }
 
+.social_buttons {
+  height: 80px;
+  width: 80px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.social_buttons img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.about_me_section_1 {
+  background-color: #49b8cc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
 .project {
   background-color: #222222;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
+  text-align: left;
+  overflow: auto;
 }
 
+.project img {
+  width: 300px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 20px;
+
+}
+
+.now {
+  font-family: comic sans ms;
+  font-size: 20px;
+  color: #f44336;
+}
+
+.tooltip {
+position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipflavortext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 @media screen and (max-width: 400px) {
-  .navbar a {
+  ul.navbar {
     float: none;
     width: 100%;
+      display: grid;
+  grid-template-areas:
+  'header'
+  'menu'
+  'main'
+  'facts'
+  'footer';
   }
 }

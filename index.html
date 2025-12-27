@@ -2,21 +2,41 @@
 <html>
 <head>
     <title>allo allo :wave: allo :3</title>
-    <meta id=viewport name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="stuff/css/menu.css">
   <link rel="icon" href="stuff/assets/imgs/favicon.png" type="image/x-icon">
 </head>
 <body class="menu-background">
 
-<div id="menu">
+  <div id="menu">
 <div id="loading-overlay" aria-hidden="false">
   <div class="glow">
     <h1>waiting...</h1>
   </div>
 </div>
 
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <div class="about-button_mobile" id="about-button-mobile">
+      
+              <img src="/stuff/assets/imgs/about.png" width="50" height="50">
+        <h1>About</h1>
+      </div>
+
+      <div class="projects-button_mobile" id="projects-button-mobile">
+      
+              <img src="/stuff/assets/imgs/projects.png" width="50" height="50">
+        <h1>Projects</h1>
+      </div>
+ 
+  <div class="now-button_mobile" id="now-button-mobile">
+      
+              <img src="stuff/assets/imgs/now.png" width="50" height="50">
+        <h1>Now</h1>
+      </div>
+</div>
+
   <a href="/about-me.html"> 
-  <div class="about-button" id="about-button">
+  <div class="about-button menu-button" id="about-button">
 			
 	            <img src="/stuff/assets/imgs/about.png" width="100" height="100">
 				<h1>About alexqwsa</h1>
@@ -25,7 +45,7 @@
   </a>		
 
   <a href="/projects.html"> 
-  <div class="projects-button" id="projects-button">
+  <div class="projects-button menu-button" id="projects-button">
 			
 	            <img src="/stuff/assets/imgs/projects.png" width="100" height="100">
 				<h1>Projects</h1>
@@ -34,7 +54,7 @@
   </a>
   
   <a href="/now.html"> 
-  <div class="now-button" id="now-button">
+  <div class="now-button menu-button" id="now-button">
 			
 	            <img src="stuff/assets/imgs/now.png" width="100" height="100">
 				<h1>Now</h1>
@@ -42,7 +62,14 @@
 			</div>
     </a>
 
-  </div>
+  <a href="#website-info">
+  <div class="info-button menu-button" id="info-button">
+      <img src="stuff/assets/imgs/info.png" width="100" height="100">
+    <h1>Info</h1>
+    <p>learn more about this website (working on it (probably))</p>
+
+      </div>
+    </a>
 
 </body>
 </html>
