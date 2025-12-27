@@ -188,6 +188,13 @@ position: relative;
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.cool_ppls_button_section {
+  background-color: #053c0e;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 1000px;
+}
 
 @media screen and (max-width: 400px) {
   ul.navbar {
@@ -203,5 +210,13 @@ position: relative;
   }
   .social_buttons {
     
+  }
+    .header {
+    padding: 20px;
+  }
+  .socials {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
   }
 }
