@@ -174,6 +174,9 @@ background-color: rgb(141, 159, 159)
     #menu {
     display: none;
     }
+    #mobile-menu {
+      display: block;
+    }
 }
 
 /* glowing text effect for preloader (probably)*/
@@ -223,4 +226,31 @@ background-color: rgb(141, 159, 159)
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #6f4929, 0 0 40px #795b22, 0 0 50px #f9ac1d, 0 0 60px #daaa26, 0 0 70px #daaa0e, 0 0 80px #ffd500;
   }
+}
+
+.about-button_mobile {
+background-color: darkcyan;
+color:lightcyan;
+box-shadow: 3px 3px 3px 3px cyan;
+font-family: profontwindows;
+font-size: small;
+padding: 0.006%;
+}
+
+.projects-button_mobile {
+background-color: green;
+color:greenyellow;
+box-shadow: 3px 3px 3px 3px lightgreen;
+font-family: profontwindows;
+font-size: small;
+padding: 0.006%;
+}
+
+.now-button_mobile {
+background-color: darkred;
+color:red;
+box-shadow: 3px 3px 3px 3px maroon;
+font-family: profontwindows;
+font-size: small;
+padding: 0.006%;
 }
